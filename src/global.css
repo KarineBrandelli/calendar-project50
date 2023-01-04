@@ -5,12 +5,25 @@
 }
 
 :root {
-  --color-background: #1E1E1E;
+  --color-background: #0B0B0B;
   --color-text: #FFFFFF;
 }
 
 body {
+  min-height: 100vh;
+
+  display: grid;
+  place-items: center;
+
+  color: var(--color-text);
   font-family: 'Inter', sans-serif;
   background-color: var(--color-background);
-  color: var(--color-text);
+}
+
+.flex {
+  display: flex;
+}
+
+.grid {
+  display: grid;
 }
