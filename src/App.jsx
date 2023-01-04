@@ -1,18 +1,11 @@
-import Button from "./components/Button";
-import Header from "./components/Header";
-import Home from './pages/Home';
-import './App.css'
+import { Home } from './pages/Home/Home';
+import { Button } from "./components/Button/Button";
 
-function App() {
+export const App = () => {
   return (
-    <div className="App">
+    <>
       <Button />
-      <div className="main-content">
-        <Header />
-        <Home />
-      </div>
-    </div>
+      <Home />
+    </>
   )
 }
-
-export default App;
