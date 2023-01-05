@@ -1,7 +1,6 @@
 import { Header } from '../../components/Header/Header';
 import { Calendar } from '../../components/Calendar/Calendar';
 import { Footer } from '../../components/Footer/Footer';
-import { Day } from '../../components/Day/Day';
 
 import './Home.css';
 
