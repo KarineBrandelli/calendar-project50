@@ -1,10 +1,10 @@
-import iconCloseWindow from '../../assets/icon_close_window.svg';
+import { X } from "phosphor-react";
 import './Button.css';
 
 export const Button = () => {
   return (
     <button onClick={() => window.close()} className="close_button">
-      <img src={iconCloseWindow} />
+      <X size={28} color="#8E2E2E"/>
     </button>
   )
 }
