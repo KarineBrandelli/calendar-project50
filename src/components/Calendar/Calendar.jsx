@@ -1,57 +1,60 @@
+import { Link } from "react-router-dom";
+import "./Calendar.css";
+
 export const Calendar = () => {
   return (
     <main className="calendar-days">
       <ul className="days">
-        <li>1</li>
-        <li>2</li>
-        <li>3</li>
-        <li>4</li>
-        <li>5</li>
-        <li>6</li>
-        <li>7</li>
-        <li>8</li>
-        <li>9</li>
-        <li>10</li>
-        <li>11</li>
-        <li>12</li>
-        <li>13</li>
-        <li>14</li>
-        <li>15</li>
-        <li>16</li>
-        <li>17</li>
-        <li>18</li>
-        <li>19</li>
-        <li>20</li>
-        <li>21</li>
-        <li>22</li>
-        <li>23</li>
-        <li>24</li>
-        <li>25</li>
-        <li>26</li>
-        <li>27</li>
-        <li>28</li>
-        <li>29</li>
-        <li>30</li>
-        <li>31</li>
-        <li>32</li>
-        <li>33</li>
-        <li>34</li>
-        <li>35</li>
-        <li>36</li>
-        <li>37</li>
-        <li>38</li>
-        <li>39</li>
-        <li>40</li>
-        <li>41</li>
-        <li>42</li>
-        <li>43</li>
-        <li>44</li>
-        <li>45</li>
-        <li>46</li>
-        <li>47</li>
-        <li>48</li>
-        <li>49</li>
-        <li>50</li>
+        <li><Link to={`day/1`}>1</Link></li>
+        <li><Link to={`day/2`}>2</Link></li>
+        <li><Link to={`day/3`}>3</Link></li>
+        <li><Link to={`day/4`}>4</Link></li>
+        <li><Link to={`day/5`}>5</Link></li>
+        <li><Link to={`day/6`}>6</Link></li>
+        <li><Link to={`day/7`}>7</Link></li>
+        <li><Link to={`day/8`}>8</Link></li>
+        <li><Link to={`day/9`}>9</Link></li>
+        <li><Link to={`day/10`}>10</Link></li>
+        <li><Link to={`day/11`}>11</Link></li>
+        <li><Link to={`day/12`}>12</Link></li>
+        <li><Link to={`day/13`}>13</Link></li>
+        <li><Link to={`day/14`}>14</Link></li>
+        <li><Link to={`day/15`}>15</Link></li>
+        <li><Link to={`day/16`}>16</Link></li>
+        <li><Link to={`day/17`}>17</Link></li>
+        <li><Link to={`day/18`}>18</Link></li>
+        <li><Link to={`day/19`}>19</Link></li>
+        <li><Link to={`day/20`}>20</Link></li>
+        <li><Link to={`day/21`}>21</Link></li>
+        <li><Link to={`day/22`}>22</Link></li>
+        <li><Link to={`day/23`}>23</Link></li>
+        <li><Link to={`day/24`}>24</Link></li>
+        <li><Link to={`day/25`}>25</Link></li>
+        <li><Link to={`day/26`}>26</Link></li>
+        <li><Link to={`day/27`}>27</Link></li>
+        <li><Link to={`day/28`}>28</Link></li>
+        <li><Link to={`day/29`}>29</Link></li>
+        <li><Link to={`day/30`}>30</Link></li>
+        <li><Link to={`day/31`}>31</Link></li>
+        <li><Link to={`day/32`}>32</Link></li>
+        <li><Link to={`day/33`}>33</Link></li>
+        <li><Link to={`day/34`}>34</Link></li>
+        <li><Link to={`day/35`}>35</Link></li>
+        <li><Link to={`day/36`}>36</Link></li>
+        <li><Link to={`day/37`}>37</Link></li>
+        <li><Link to={`day/38`}>38</Link></li>
+        <li><Link to={`day/39`}>39</Link></li>
+        <li><Link to={`day/40`}>40</Link></li>
+        <li><Link to={`day/41`}>41</Link></li>
+        <li><Link to={`day/42`}>42</Link></li>
+        <li><Link to={`day/43`}>43</Link></li>
+        <li><Link to={`day/44`}>44</Link></li>
+        <li><Link to={`day/45`}>45</Link></li>
+        <li><Link to={`day/46`}>46</Link></li>
+        <li><Link to={`day/47`}>47</Link></li>
+        <li><Link to={`day/48`}>48</Link></li>
+        <li><Link to={`day/49`}>49</Link></li>
+        <li><Link to={`day/50`}>50</Link></li>
       </ul>
     </main>
   )
