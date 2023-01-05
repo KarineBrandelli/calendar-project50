@@ -1,0 +1,18 @@
+.arrow-left {
+  margin-bottom: 2.75rem;
+}
+
+.checklist-items {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem 4rem;
+
+  margin-top: 3.4rem;
+  font-weight: 500;
+  opacity: .8;
+}
+
+.checklist-items li {
+  list-style: none;
+  justify-self: start;
+}
