@@ -1,5 +1,4 @@
 .home-container {
-  display: grid;
   place-items: center;
   row-gap: 4rem;
 }
