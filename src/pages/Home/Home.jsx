@@ -7,11 +7,10 @@ import './Home.css';
 
 export const Home = () => {
   return (
-    <div className="home-container">
-      {/* <Header />
+    <div className="home-container grid">
+      <Header />
       <Calendar />
-      <Footer /> */}
-      <Day />
+      <Footer />
     </div>
   )
 }
