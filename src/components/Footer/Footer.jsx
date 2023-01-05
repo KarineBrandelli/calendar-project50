@@ -1,11 +1,11 @@
-import githubIcon from '../../assets/github-icon.svg';
+import { GithubLogo  } from "phosphor-react";
 import "./Footer.css";
 
 export const Footer = () => {
   return (
     <footer>
       <a href="#">
-        <img src={githubIcon} />
+        <GithubLogo size={32} color="white" />
       </a>
     </footer>
   )
