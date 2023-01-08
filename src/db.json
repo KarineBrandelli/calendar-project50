@@ -1,9 +1,9 @@
 {
   "day_1": {
     "tasks": [
-      false,
-      false,
-      false,
+      true,
+      true,
+      true,
       false,
       false,
       false,
@@ -12,9 +12,9 @@
   },
   "day_2": {
     "tasks": [
-      false,
-      false,
-      false,
+      true,
+      true,
+      true,
       false,
       false,
       false,
