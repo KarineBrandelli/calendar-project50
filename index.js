@@ -13,7 +13,7 @@ const createWindow = () => {
     }
   })
 
-  win.loadURL('http://localhost:5173/');
+  setTimeout(() => win.loadURL('http://localhost:5173/'), 1000);
 }
 
 app.whenReady().then(() => {
