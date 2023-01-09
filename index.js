@@ -2,15 +2,18 @@ const { app, BrowserWindow } = require("electron");
 
 const createWindow = () => {
   const win = new BrowserWindow({
-    width: 400,
-    height: 400,
+    width: 900,
+    height: 640,
+    minWidth: 640,
+    minHeight: 560,
     frame: false,
     webPreferences: {
       nodeIntegration: true,
+      devTools: false
     }
   })
 
-  win.loadURL('http://localhost:5173/');
+  setTimeout(() => win.loadURL('http://localhost:5173/'), 1000);
 }
 
 app.whenReady().then(() => {
