@@ -4,8 +4,6 @@ import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import "./Calendar.css";
 
-{/* <CheckCircle size={32} color="white" /> */}
-
 export const Calendar = () => {
   const [days, setDays] = useState([]);
 
@@ -25,15 +23,30 @@ export const Calendar = () => {
     getDataFromDB();
   }, [])
 
+  function updateStateDay() {
+    const stateDay = [];
+
+    for (const day of days) {
+      if (day.every(value => value)) stateDay.push(true);
+      else stateDay.push(false);
+    }
+
+    return stateDay;
+  }
+
   return (
     <main className="calendar-days">
       <ul className="days">
         {
           days.map((day, index) => {
             return (
-              <li key={index + 1}>
+              <li key={index}>
                 <Link to={`day/${index + 1}`}>
-                  {index + 1}
+                  {
+                    updateStateDay()[index] 
+                    ? <CheckCircle size={32} color="white" />
+                    : index + 1
+                  }
                 </Link>
               </li>
             )
