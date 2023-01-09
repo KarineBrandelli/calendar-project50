@@ -17,10 +17,7 @@ export const Checklist = () => {
     axios
       .get(`http://localhost:3000/day_${id}`)
       .then((res) => {
-      setCheckedState(res.data.tasks);
-
-      console.log(res.data.tasks);
-      console.log("get");
+        setCheckedState(res.data.tasks);
     });
   }, []);
 
@@ -36,10 +33,7 @@ export const Checklist = () => {
       .post(`http://localhost:3000/day_${id}`, {
         tasks: updatedCheckedState,
       })
-      .then((res) => {
-        console.log(res.data.tasks);
-        console.log("post");
-      });
+      .then((res) => {});
   };
 
   return (
