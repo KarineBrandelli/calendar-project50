@@ -1,6 +1,6 @@
 import axios from "axios";
 import { useParams } from "react-router-dom";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 import { CheckboxInput } from "../Checkbox/Checkbox";
 import { listItems } from "./ChecklistItems";
@@ -13,22 +13,32 @@ export const Checklist = () => {
     new Array(listItems.length).fill(false)
   );
 
+  useEffect(() => {
+    axios
+      .get(`http://localhost:3000/day_${id}`)
+      .then((res) => {
+      setCheckedState(res.data.tasks);
+
+      console.log(res.data.tasks);
+      console.log("get");
+    });
+  }, []);
+
   const handleOnChange = (position) => {
     const updatedCheckedState = checkedState.map((item, index) =>
       index === position ? !item : item
     );
 
     // console.log(updatedCheckedState);
-
     setCheckedState(updatedCheckedState);
 
     axios
-      .put(`http://localhost:3000/day_${id}`, {
+      .post(`http://localhost:3000/day_${id}`, {
         tasks: updatedCheckedState,
       })
       .then((res) => {
         console.log(res.data.tasks);
-        console.log("put");
+        console.log("post");
       });
   };
 

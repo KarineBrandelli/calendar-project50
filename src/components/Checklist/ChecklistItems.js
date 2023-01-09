@@ -1,30 +1,23 @@
 export const listItems = [
   {
-    name: "WAKE UP BEFORE 8 A.M",
-    position: 1
+    name: "WAKE UP BEFORE 8 A.M"
   },
   {
-    name: "READ 10 PAGES",
-    position: 2
+    name: "READ 10 PAGES"
   },
   {
-    name: "1H MORNING ROUTINE",
-    position: 3
+    name: "1H MORNING ROUTINE"
   },
   {
-    name: "FOLLOWED A HELTHY DIET",
-    position: 4
+    name: "FOLLOWED A HELTHY DIET"
   },
   {
-    name: "1H EXERCISES",
-    position: 5
+    name: "1H EXERCISES"
   },
   {
-    name: "TRACK YOUR PROGRESS",
-    position: 6
+    name: "TRACK YOUR PROGRESS"
   },
   {
-    name: "1H LEARNING A NEW SKILL",
-    position: 7
+    name: "1H LEARNING A NEW SKILL"
   }
 ];
