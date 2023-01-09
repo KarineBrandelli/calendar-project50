@@ -13,23 +13,23 @@ export const Checklist = () => {
     new Array(listItems.length).fill(false)
   );
 
-  function getData() {
-    axios({
-      method: "get",
-      url: `http://localhost:3000/day_${id}`,
-    })
-    .then((res) => {
-      console.log(res.data.tasks);
-    });
-  }
-
   const handleOnChange = (position) => {
-    const updatedCheckedState = 
-      checkedState.map((item, index) => index === position ? !item : item);
-    
-    console.log(updatedCheckedState);
-  
+    const updatedCheckedState = checkedState.map((item, index) =>
+      index === position ? !item : item
+    );
+
+    // console.log(updatedCheckedState);
+
     setCheckedState(updatedCheckedState);
+
+    axios
+      .put(`http://localhost:3000/day_${id}`, {
+        tasks: updatedCheckedState,
+      })
+      .then((res) => {
+        console.log(res.data.tasks);
+        console.log("put");
+      });
   };
 
   return (
