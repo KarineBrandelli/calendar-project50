@@ -41,11 +41,9 @@ npm start
 - [Figma](https://figma.com/)
 - [Vite](https://vitejs.dev/)
 - [React](https://reactjs.org/)
-- [Electron](https://www.electronjs.org/)
 - [MUI/Material](https://mui.com/)
 - [Phosfor Icons](https://phosphoricons.com/)
 - [Axios](https://axios-http.com/)
-- [json-server](https://www.npmjs.com/package/json-server)
 
 ## Contributors
 

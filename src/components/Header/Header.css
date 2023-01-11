@@ -22,3 +22,14 @@
   font-weight: 500;
   opacity: .8;
 }
+
+@media only screen and (max-width: 375px) {
+  .title  {
+    font-size: 1.75rem;
+  }
+
+  .current-date,
+  .subtitle {
+    font-size: .75rem;
+  }
+}

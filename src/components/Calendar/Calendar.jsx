@@ -9,7 +9,7 @@ export const Calendar = () => {
 
   useEffect(() => {
     async function getDataFromDB() {
-      const res = await fetch('./src/db.json')
+      const res = await fetch('https://calendar-project50-api.wesleydamasceno.repl.co/all')
       const data = await res.json();
 
       const database = [];

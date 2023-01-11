@@ -15,7 +15,7 @@ export const Checklist = () => {
 
   useEffect(() => {
     axios
-      .get(`http://localhost:3000/day_${id}`)
+      .get(`https://calendar-project50-api.wesleydamasceno.repl.co/day_${id}`)
       .then((res) => {
         setCheckedState(res.data.tasks);
     });
@@ -26,14 +26,13 @@ export const Checklist = () => {
       index === position ? !item : item
     );
 
-    // console.log(updatedCheckedState);
     setCheckedState(updatedCheckedState);
 
     axios
-      .post(`http://localhost:3000/day_${id}`, {
-        tasks: updatedCheckedState,
-      })
-      .then((res) => {});
+       .post(`https://calendar-project50-api.wesleydamasceno.repl.co/day_${id}`, {
+         tasks: updatedCheckedState,
+       })
+       .then((res) => {});
   };
 
   return (
