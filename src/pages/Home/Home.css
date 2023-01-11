@@ -22,3 +22,9 @@ li {
   place-items: center;
   list-style-type: none;
 }
+
+@media only screen and (max-width: 425px) {
+  .days {
+    grid-template-columns: repeat(7, 1fr);
+  }
+}
