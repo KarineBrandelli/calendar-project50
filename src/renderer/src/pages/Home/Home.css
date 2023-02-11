@@ -1,0 +1,30 @@
+.home-container {
+  place-items: center;
+  row-gap: 4rem;
+}
+
+.calendar-days {
+  font-size: 1rem;
+  font-weight: 400;
+  opacity: .6;
+}
+
+.days {
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  gap: 1rem;
+}
+
+li {
+  min-width: 1.625rem;
+  min-height: 1.625rem;
+  display: grid;
+  place-items: center;
+  list-style-type: none;
+}
+
+@media only screen and (max-width: 425px) {
+  .days {
+    grid-template-columns: repeat(7, 1fr);
+  }
+}
