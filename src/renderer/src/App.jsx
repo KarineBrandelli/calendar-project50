@@ -1,7 +1,6 @@
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 
 import { Home } from './pages/Home/Home'
-import { Button } from './components/Button/Button'
 import { Day } from './pages/Day/Day'
 
 const router = createBrowserRouter([
@@ -17,9 +16,6 @@ const router = createBrowserRouter([
 
 export const App = () => {
   return (
-    <>
-      <Button />
-      <RouterProvider router={router} />
-    </>
+    <RouterProvider router={router} />
   )
 }
