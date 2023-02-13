@@ -18,8 +18,9 @@ export const Checklist = () => {
       index === position ? !item : item
     )
 
+    localStorage.setItem(`day ${id}`, JSON.stringify(updatedCheckedState))
     setCheckedState(updatedCheckedState)
-
+  }
 
   return (
     <>
