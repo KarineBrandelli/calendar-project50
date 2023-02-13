@@ -15,6 +15,6 @@ export const CheckboxInput = ({ marked, changedMark }) => {
 }
 
 CheckboxInput.propTypes = {
-  marked: PropTypes.number,
+  marked: PropTypes.bool,
   changedMark: PropTypes.func
 }
