@@ -5,7 +5,8 @@ import { Link } from 'react-router-dom'
 import './Calendar.css'
 
 export const Calendar = () => {
-  const [days, setDays] = useState([])
+  const calendar = new Array(50).fill(false)
+  const [days, setDays] = useState([...calendar])
 
   useEffect(() => {
     async function getDataFromDB() {
