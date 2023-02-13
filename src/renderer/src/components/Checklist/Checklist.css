@@ -1,7 +1,7 @@
 .checklist-items {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 1rem 2.625rem;
+  grid-template-columns: 1fr;
+  row-gap: 1.125rem;
 
   font-weight: 500;
   opacity: .8;
