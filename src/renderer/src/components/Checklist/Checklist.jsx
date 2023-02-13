@@ -1,6 +1,5 @@
-import axios from 'axios'
 import { useParams } from 'react-router-dom'
-import { useEffect, useState } from 'react'
+import { useState } from 'react'
 
 import { CheckboxInput } from '../Checkbox/Checkbox'
 import { listItems } from './ChecklistItems'
@@ -19,17 +18,8 @@ export const Checklist = () => {
       index === position ? !item : item
     )
 
-    localStorage.setItem(`day ${id}`, JSON.stringify(updatedCheckedState))
     setCheckedState(updatedCheckedState)
 
-    axios
-      .post(`https://calendar-project50-api.wesleydamasceno.repl.co/day_${id}`, {
-        tasks: updatedCheckedState
-      })
-      .then((res) => {
-        console.log(res)
-      })
-  }
 
   return (
     <>
