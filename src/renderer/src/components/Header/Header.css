@@ -25,6 +25,9 @@
 @media only screen and (max-width: 425px) {
   .title  {
     font-size: 1.75rem;
+    flex-direction: column-reverse;
+    align-items: flex-start;
+    gap: .5rem;
   }
 
   .current-date,
