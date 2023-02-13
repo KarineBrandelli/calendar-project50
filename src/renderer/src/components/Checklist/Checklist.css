@@ -18,12 +18,6 @@
   padding: 0;
 }
 
-@media only screen and (max-width: 425px) {
-  .checklist-items {
-    grid-template-columns: 1fr;
-  }
-}
-
 @media only screen and (max-width: 375px) {
   .checklist-items li {
     font-size: .85rem;
