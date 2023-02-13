@@ -23,8 +23,8 @@ li {
   list-style-type: none;
 }
 
-@media only screen and (max-width: 425px) {
+@media only screen and (max-width: 375px) {
   .days {
-    grid-template-columns: repeat(7, 1fr);
+    grid-template-columns: repeat(5, 1fr);
   }
 }
