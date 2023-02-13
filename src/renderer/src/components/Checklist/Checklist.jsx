@@ -9,13 +9,10 @@ import './Checklist.css'
 
 export const Checklist = () => {
   const { id } = useParams()
-  const [checkedState, setCheckedState] = useState(new Array(listItems.length).fill(false))
-
-  useEffect(() => {
-    axios.get(`https://calendar-project50-api.wesleydamasceno.repl.co/day_${id}`).then((res) => {
-      setCheckedState(res.data.tasks)
-    })
-  }, [])
+  const database = JSON.parse(localStorage.getItem(`day ${id}`))
+  const [checkedState, setCheckedState] = useState(
+    database || new Array(listItems.length).fill(false)
+  )
 
   const handleOnChange = (position) => {
     const updatedCheckedState = checkedState.map((item, index) =>
@@ -23,6 +20,14 @@ export const Checklist = () => {
     )
 
     setCheckedState(updatedCheckedState)
+
+    axios
+      .post(`https://calendar-project50-api.wesleydamasceno.repl.co/day_${id}`, {
+        tasks: updatedCheckedState
+      })
+      .then((res) => {
+        console.log(res)
+      })
   }
 
   return (
