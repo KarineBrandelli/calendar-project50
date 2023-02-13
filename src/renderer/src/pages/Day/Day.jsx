@@ -12,9 +12,10 @@ export const Day = () => {
       <Link to={`/`}>
         <ArrowLeft className="arrow-left" size={24} color="white" />
       </Link>
-
-      <Header />
-      <Checklist />
+      <div className="day-container-header-checklist grid">
+        <Header />
+        <Checklist />
+      </div>
     </div>
   )
 }
