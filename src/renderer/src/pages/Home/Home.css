@@ -11,8 +11,8 @@
 
 .days {
   display: grid;
-  grid-template-columns: repeat(10, 1fr);
-  gap: 1rem;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 0.875rem 1.5rem;
 }
 
 li {
