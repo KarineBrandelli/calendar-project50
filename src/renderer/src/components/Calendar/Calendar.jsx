@@ -23,17 +23,6 @@ export const Calendar = () => {
     getDataFromDB()
   }, [])
 
-  function updateStateDay() {
-    const stateDay = []
-
-    for (const day of days) {
-      if (day.every((value) => value)) stateDay.push(true)
-      else stateDay.push(false)
-    }
-
-    return stateDay
-  }
-
   return (
     <main className="calendar-days">
       <ul className="days">
