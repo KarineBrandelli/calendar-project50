@@ -27,9 +27,9 @@ export const Calendar = () => {
       <ul className="days">
         {days.map((day, index) => {
           return (
-            <li key={index}>
+            <li key={`day-${index}`}>
               <Link to={`day/${index + 1}`}>
-                {updateStateDay()[index] ? <CheckCircle size={32} color="white" /> : index + 1}
+                {day ? <CheckCircle size={32} color="white" /> : index + 1}
               </Link>
             </li>
           )
