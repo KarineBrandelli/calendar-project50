@@ -7,3 +7,13 @@
   grid-template-rows: auto auto;
   row-gap: 2.3rem;
 }
+
+@media only screen and (max-width: 425px) {
+  .day-container {
+    display: block !important;
+  }
+
+  .day-container-header-checklist {
+    padding-top: 2rem;
+  }
+}
