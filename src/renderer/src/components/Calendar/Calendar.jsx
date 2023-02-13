@@ -9,19 +9,17 @@ export const Calendar = () => {
   const [days, setDays] = useState([...calendar])
 
   useEffect(() => {
-    async function getDataFromDB() {
-      const res = await fetch('https://calendar-project50-api.wesleydamasceno.repl.co/all')
-      const data = await res.json()
+    const storage = days.map((day, index) => {
+      const currentDay = JSON.parse(localStorage.getItem(`day ${index + 1}`)) || false
 
-      const database = []
-      for (const day in data) {
-        database.push(data[day].tasks)
+      if (currentDay) {
+        return currentDay.every((task) => task)
       }
 
-      setDays(database)
-    }
+      return currentDay
+    })
 
-    getDataFromDB()
+    setDays(storage)
   }, [])
 
   return (
