@@ -23,14 +23,6 @@ export const Checklist = () => {
     )
 
     setCheckedState(updatedCheckedState)
-
-    axios
-      .post(`https://calendar-project50-api.wesleydamasceno.repl.co/day_${id}`, {
-        tasks: updatedCheckedState
-      })
-      .then((res) => {
-        console.log(res)
-      })
   }
 
   return (
