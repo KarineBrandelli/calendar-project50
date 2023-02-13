@@ -9,8 +9,8 @@
 }
 
 @media only screen and (max-width: 425px) {
-  .day-container {
-    display: block !important;
+  div.day-container {
+    display: block;
   }
 
   .day-container-header-checklist {
