@@ -18,7 +18,7 @@
   padding: 0;
 }
 
-@media only screen and (max-width: 375px) {
+@media only screen and (max-width: 425px) {
   .checklist-items li {
     font-size: .85rem;
   }
