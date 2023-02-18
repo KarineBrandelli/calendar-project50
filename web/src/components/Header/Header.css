@@ -1,0 +1,37 @@
+.header {
+  row-gap: .5rem;
+}
+
+.title {
+  align-items: center;
+  column-gap: 1rem;
+  font-size: 2rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.current-date {
+  font-size: 1rem;
+  font-weight: 400;
+  opacity: .4;
+}
+
+.subtitle {
+  font-size: 1rem;
+  font-weight: 500;
+  opacity: .8;
+}
+
+@media only screen and (max-width: 425px) {
+  .title  {
+    font-size: 1.75rem;
+    flex-direction: column-reverse;
+    align-items: flex-start;
+    gap: .5rem;
+  }
+
+  .current-date,
+  .subtitle {
+    font-size: .75rem;
+  }
+}

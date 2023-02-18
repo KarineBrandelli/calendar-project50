@@ -1,0 +1,19 @@
+.day-container {
+  grid-template-columns: auto auto;
+  column-gap: 2.25rem;
+}
+
+.day-container-header-checklist {
+  grid-template-rows: auto auto;
+  row-gap: 2.3rem;
+}
+
+@media only screen and (max-width: 425px) {
+  div.day-container {
+    display: block;
+  }
+
+  .day-container-header-checklist {
+    padding-top: 2rem;
+  }
+}
