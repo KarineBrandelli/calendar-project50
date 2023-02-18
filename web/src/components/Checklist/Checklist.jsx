@@ -1,4 +1,4 @@
-import { useParams } from 'react-router-dom'
+import { useParams, Navigate } from 'react-router-dom'
 import { useState } from 'react'
 
 import { CheckboxInput } from '../Checkbox/Checkbox'
@@ -12,6 +12,10 @@ export const Checklist = () => {
   const [checkedState, setCheckedState] = useState(
     database || new Array(listItems.length).fill(false)
   )
+
+  if (id > 50 ) {
+    return <Navigate to="/" replace />
+  }
 
   const handleOnChange = (position) => {
     const updatedCheckedState = checkedState.map((item, index) =>
