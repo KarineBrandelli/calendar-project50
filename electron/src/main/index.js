@@ -27,7 +27,7 @@ function createWindow() {
     return { action: 'deny' }
   })
 
-  mainWindow.loadURL('https://karinebrandelli.github.io/calendar-project50/')
+  mainWindow.loadURL('https://project50-calendar.vercel.app/')
 }
 
 app.whenReady().then(() => {
